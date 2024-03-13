@@ -43,7 +43,7 @@ const Tab = () => {
           </div>
         </div>
         {tab === "tab1" && (
-          <div className="tab1 bg-white">
+          <div className="tab1 bg-white  p-4 rounded">
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
               ultrices sit amet mi eu suscipit. Etiam pretium est non ante
@@ -56,7 +56,7 @@ const Tab = () => {
           </div>
         )}
         {tab === "tab2" && (
-          <div className="tab2  bg-white">
+          <div className="tab2  bg-white p-4 rounded">
             <p>
               Tab2 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
               ultrices sit amet mi eu suscipit. Etiam pretium est non ante
@@ -69,7 +69,7 @@ const Tab = () => {
           </div>
         )}
         {tab === "tab3" && (
-          <div className="tab3  bg-white">
+          <div className="tab3  bg-white p-4 rounded">
             <p>
               Tab3 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
               ultrices sit amet mi eu suscipit. Etiam pretium est non ante
@@ -82,7 +82,7 @@ const Tab = () => {
           </div>
         )}
       </div>
-      <div>
+      <div className="flex justify-center">
         <Code component={tabCode}></Code>
       </div>
     </div>

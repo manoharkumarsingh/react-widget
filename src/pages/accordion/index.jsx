@@ -30,7 +30,7 @@ const Accordion = () => {
   };
 
   return (
-    <div className="flex flex-col gap-10  p-10">
+    <div className="flex flex-col gap-10 p-10">
       <div>
         {data.map((item) => {
           return (
@@ -51,7 +51,7 @@ const Accordion = () => {
           );
         })}
       </div>
-      <div>
+      <div className="flex justify-center">
         <Code component={accordionCode} />
       </div>
     </div>

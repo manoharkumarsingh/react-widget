@@ -20,9 +20,9 @@ const Code = (props) => {
     }
   };
   return (
-    <>
+    <div className="w-[854px]">
       <button
-        className="mt-[9px] absolute text-white"
+        className="mt-[9px] absolute text-white pl-2"
         onClick={() => handleCopy()}
       >
         {copyText}
@@ -30,7 +30,7 @@ const Code = (props) => {
       <SyntaxHighlighter className="rounded" language="jsx" style={tomorrow}>
         {props.component}
       </SyntaxHighlighter>
-    </>
+    </div>
   );
 };
 
