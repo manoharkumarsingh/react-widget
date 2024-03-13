@@ -1,7 +1,6 @@
-import React from "react";
-import Code from "../../Code";
-import accordionCode from "./accordionCode";
+const accordionCode = `
 
+import React from "react";
 const Accordion = () => {
   const data = [
     {
@@ -30,7 +29,7 @@ const Accordion = () => {
   };
 
   return (
-    <div className="flex flex-col gap-10  p-10">
+    <div className="flex flex-col gap-10 max-w-[42%] p-10">
       <div>
         {data.map((item) => {
           return (
@@ -51,11 +50,12 @@ const Accordion = () => {
           );
         })}
       </div>
-      <div>
-        <Code component={accordionCode} />
-      </div>
     </div>
   );
 };
 
 export default Accordion;
+
+`;
+
+export default accordionCode;

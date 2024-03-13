@@ -1,8 +1,5 @@
-import React from "react";
-import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
-import { tomorrow } from "react-syntax-highlighter/dist/esm/styles/prism";
+const tabCode = `
 
-const component = `
 import React, { useState } from "react";
 const Tab = () => {
   const [tab, setTab] = useState("tab1");
@@ -92,14 +89,4 @@ const Tab = () => {
 export default Tab;
 `;
 
-const Code = () => {
-  return (
-    <div className="w-[90%]">
-      <SyntaxHighlighter className="rounded" language="jsx" style={tomorrow}>
-        {component}
-      </SyntaxHighlighter>
-    </div>
-  );
-};
-
-export default Code;
+export default tabCode;

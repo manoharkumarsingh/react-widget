@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-import Code from "./Code";
+import Code from "../../Code";
+import tabCode from "./tabCode";
 
 const Tab = () => {
   const [tab, setTab] = useState("tab1");
@@ -7,8 +8,8 @@ const Tab = () => {
     setTab(tab);
   };
   return (
-    <>
-      <div className="m-[50px]">
+    <div className="flex flex-col gap-10 p-10">
+      <div>
         <div className="flex gap-4 mb-4">
           <div
             className={
@@ -42,7 +43,7 @@ const Tab = () => {
           </div>
         </div>
         {tab === "tab1" && (
-          <div className="tab1 bg-white p-10 w-[90%]">
+          <div className="tab1 bg-white">
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
               ultrices sit amet mi eu suscipit. Etiam pretium est non ante
@@ -55,7 +56,7 @@ const Tab = () => {
           </div>
         )}
         {tab === "tab2" && (
-          <div className="tab2  bg-white  p-10 w-[90%]">
+          <div className="tab2  bg-white">
             <p>
               Tab2 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
               ultrices sit amet mi eu suscipit. Etiam pretium est non ante
@@ -68,7 +69,7 @@ const Tab = () => {
           </div>
         )}
         {tab === "tab3" && (
-          <div className="tab3  bg-white  p-10 w-[90%]">
+          <div className="tab3  bg-white">
             <p>
               Tab3 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
               ultrices sit amet mi eu suscipit. Etiam pretium est non ante
@@ -81,8 +82,10 @@ const Tab = () => {
           </div>
         )}
       </div>
-      <Code></Code>
-    </>
+      <div>
+        <Code component={tabCode}></Code>
+      </div>
+    </div>
   );
 };
 
