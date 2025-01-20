@@ -1,6 +1,8 @@
 import React from "react";
 import Code from "../../Code";
 import accordionCode from "./accordionCode";
+import { Button } from "primereact/button";
+import "primereact/resources/themes/lara-light-cyan/theme.css";
 
 const Accordion = () => {
   const data = [
